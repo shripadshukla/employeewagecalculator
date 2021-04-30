@@ -3,17 +3,12 @@ public class EmpWageCompute {
 
 	public static void main(String[] args) {
 		
-				int IS_PRESENT = 1;
-				
-				double empCheck = Math.floor(Math.random() * 10) % 2;
-				
-				if (empCheck == IS_PRESENT)
-					
-					System.out.println("Employee is present");
-				
-				else
-
-					System.out.println("Emppployee is absent");
+		int Wage_Per_Hour = 20;
+		int Full_day_Hour = 8;
+		
+		double EmpdailyWage = (Wage_Per_Hour * Full_day_Hour);
+		
+		System.out.println("Employee daily wage is = "+EmpdailyWage);
 			}
 
 		}
