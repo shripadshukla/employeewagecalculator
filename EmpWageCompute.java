@@ -2,22 +2,31 @@
 public class EmpWageCompute {
 
 	public static void main(String[] args) {
-		
-		int full_time_Employee = 1;
-		int part_time_Employee = 2;
-		int wage_Per_Hour = 20;
-		int full_day_Hour = 8;
-		int part_time_Hour =4;
 
-			
-			double full_time_EmpdailyWage = (wage_Per_Hour * full_day_Hour);
+		// TODO Auto-generated method stub
 		
-			double part_time_EmpdailyWage = (wage_Per_Hour * part_time_Hour);
+		int Employee = 1;
+		int Full_time_Wage = 20;
+		int Full_time_Hour = 8;
+		int Part_time_Hour = 4;
+		
+		// Total working days for a month
+		int Working_days = 20;
+		
+		switch (Employee) {
+		
+			case 1:
+				System.out.println("Employee is Full Time Present");
+				
+				double Emp_Wage1 = (Working_days * Full_time_Wage * Full_time_Hour);
+				System.out.println("Full Time Employee Wage for a month is = " +Emp_Wage1 );
 			
-		System.out.println("Full Time Employee daily wage is = "+full_time_EmpdailyWage);
-	
-		System.out.println("Part Time Employee daily wage is = "+ part_time_EmpdailyWage);
+			default:
+				System.out.println("Employee is Part Time Present");
+				
+				double Emp_Wage2 = (Working_days * Full_time_Wage * Part_time_Hour);
+				System.out.println("Part Time Employee Wage for a month is = " +Emp_Wage2);
 			}
 
 		}
-
+}
