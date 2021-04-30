@@ -14,12 +14,21 @@ public class EmpWageCompute {
 				// Total working days for a month
 				int Working_days = 20;
 				
-				double Emp_Wage1 = (Working_days * Full_time_Wage * Full_time_Hour);
+				// n is maximum working hours
+				int n= 100;
 				
-				double Emp_Wage2 = (Working_days * Full_time_Wage * Part_time_Hour);
+				// d is maximum working days
+				int d=20;
 				
-				System.out.println("Full Time Employee Wage for a month is = " +Emp_Wage1 );
-				System.out.println("Part Time Employee Wage for a month is = " +Emp_Wage2);
-
+				for(int i=1; i<=n; i++) {
+					
+					for (int j=1; j<=d; j++) {
+						
+						double Emp_Wage1 = (j * Full_time_Wage * i);
+						
+						System.out.println("Full Time Employee Wage for a month is = " +Emp_Wage1 );
+					}
+					
+				}
 		}
 }
